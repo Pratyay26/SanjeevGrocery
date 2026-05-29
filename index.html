@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjeev Grocery Shop – Organic Products for Better Health</title>
+  <meta name="description" content="Sanjeev Grocery Shop – Fresh, organic groceries delivered to your door. Order online or on WhatsApp." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-leaf">🌿</span>
+        <div class="logo-text">
+          <span class="logo-name">Sanjeev</span>
+          <span class="logo-sub">Grocery Shop</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Cart Button -->
+        <button class="cart-btn" id="cartBtn" aria-label="Open Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-circle c1"></div>
+      <div class="hero-circle c2"></div>
+      <div class="hero-circle c3"></div>
+      <div class="hero-leaves">
+        <span>🌿</span><span>🍃</span><span>🌱</span><span>🍀</span><span>🌿</span>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🌾 100% Organic & Fresh</div>
+      <h1 class="hero-title">
+        Your Daily <span class="accent">Groceries</span><br/>Delivered Fresh
+      </h1>
+      <p class="hero-sub">Organic Products for Better Health — sourced directly from farms to your table.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">Shop Now →</a>
+        <a href="https://wa.me/917043873494" target="_blank" class="btn btn-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.845L.054 23.25l5.532-1.454A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.033-1.375l-.36-.214-3.737.98 1-3.633-.234-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+          WhatsApp Order
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Products</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Organic</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">Fast</span><span class="stat-label">Delivery</span></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-wrap">
+        <div class="hero-emoji-grid">
+          <span>🍎</span><span>🥦</span><span>🍚</span>
+          <span>🥛</span><span>🫒</span><span>🍯</span>
+          <span>🫘</span><span>🧂</span><span>🌾</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS SECTION ========== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Our Products</div>
+        <h2 class="section-title">Fresh & Organic <span class="accent">Groceries</span></h2>
+        <p class="section-desc">Carefully curated organic products for your everyday needs.</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="staples">Staples</button>
+        <button class="filter-btn" data-category="dairy">Dairy & Eggs</button>
+        <button class="filter-btn" data-category="pulses">Pulses</button>
+        <button class="filter-btn" data-category="spices">Spices</button>
+        <button class="filter-btn" data-category="fruits">Fruits & Veg</button>
+        <button class="filter-btn" data-category="organic">Organic</button>
+        <button class="filter-btn" data-category="personal">Personal Care</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-stack">
+            <div class="acard acard-1">
+              <span class="acard-icon">🌾</span>
+              <span>Farm Fresh</span>
+            </div>
+            <div class="acard acard-2">
+              <span class="acard-icon">🚚</span>
+              <span>Fast Delivery</span>
+            </div>
+            <div class="acard acard-3">
+              <span class="acard-icon">✅</span>
+              <span>Quality Assured</span>
+            </div>
+          </div>
+          <div class="about-big-emoji">🌿</div>
+        </div>
+        <div class="about-content">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">More Than Just a<br/><span class="accent">Grocery Shop</span></h2>
+          <p class="about-desc">Welcome to <strong>Sanjeev Grocery Shop</strong> – your trusted neighborhood store for premium, organic groceries. We believe that good health starts with good food, and good food starts with fresh, natural ingredients.</p>
+          <p class="about-desc">Every product in our store is carefully selected for quality, freshness, and nutritional value. From farm-fresh vegetables to pure organic staples, we bring the best of nature directly to your kitchen.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <span class="feature-icon">🌱</span>
+              <div>
+                <strong>100% Organic</strong>
+                <p>No artificial additives or preservatives</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🤝</span>
+              <div>
+                <strong>Trusted Since Years</strong>
+                <p>Serving the community with integrity</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">💚</span>
+              <div>
+                <strong>Eco-Friendly</strong>
+                <p>Sustainable packaging and sourcing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">Visit or <span class="accent">Contact Us</span></h2>
+        <p class="section-desc">We're here to help with your grocery needs.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-item">
+              <span class="contact-icon">🏪</span>
+              <div>
+                <strong>Shop Name</strong>
+                <p>Sanjeev Grocery Shop</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:sanjeevkumaronly94@gmail.com">sanjeevkumaronly94@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📱</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/917043873494" target="_blank">+91 70438 73494</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕐</span>
+              <div>
+                <strong>Business Hours</strong>
+                <p>Mon–Sat: 7:00 AM – 9:00 PM</p>
+                <p>Sunday: 8:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+            <a href="https://wa.me/917043873494" target="_blank" class="btn btn-whatsapp full-width">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.845L.054 23.25l5.532-1.454A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.033-1.375l-.36-.214-3.737.98 1-3.633-.234-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <div class="map-embed">
+            <iframe
+              src="https://maps.google.com/maps?q=Bikramganj,Bihar,India&output=embed&z=15"
+              width="100%"
+              height="340"
+              style="border:0; border-radius: var(--radius-lg);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Sanjeev Grocery Shop Location">
+            </iframe>
+            <a href="https://maps.app.goo.gl/i2Kx9D6cWjn1neGaA" target="_blank" class="map-directions-btn">
+              📍 Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span>🌿</span>
+            <div>
+              <span class="logo-name">Sanjeev Grocery Shop</span>
+              <span class="logo-sub">Organic Products for Better Health</span>
+            </div>
+          </div>
+          <p class="footer-desc">Your trusted source for fresh, organic groceries. Quality and health — delivered to your door.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📧 <a href="mailto:sanjeevkumaronly94@gmail.com">sanjeevkumaronly94@gmail.com</a></p>
+          <p>📱 <a href="https://wa.me/917043873494">+91 70438 73494</a></p>
+          <p>🕐 Mon–Sat: 7 AM – 9 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sanjeev Grocery Shop. All rights reserved. Made with 💚 for better health.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING CART BUTTON ========== -->
+  <button class="floating-cart" id="floatingCart" aria-label="Open Cart">
+    🛒
+    <span class="floating-cart-count" id="floatingCartCount">0</span>
+  </button>
+
+  <!-- ========== CART DRAWER ========== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h2>🛒 Your Cart</h2>
+      <button class="cart-close" id="cartClose" aria-label="Close Cart">&times;</button>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-body" id="cartBody">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Cart Footer / Order Form -->
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total-row">
+        <span>Total Amount</span>
+        <span class="cart-total" id="cartTotal">₹0.00</span>
+      </div>
+
+      <!-- Order Form -->
+      <div class="order-form" id="orderForm">
+        <h3>📋 Your Details</h3>
+        <div class="form-group">
+          <label for="custName">Full Name <span class="req">*</span></label>
+          <input type="text" id="custName" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="custPhone">Phone Number <span class="req">*</span></label>
+          <input type="tel" id="custPhone" placeholder="+91 XXXXX XXXXX" required />
+        </div>
+        <div class="form-group">
+          <label for="custAddress">Delivery Address</label>
+          <textarea id="custAddress" placeholder="Enter your delivery address (optional)" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="custNotes">Order Notes</label>
+          <textarea id="custNotes" placeholder="Any special requests? (optional)" rows="2"></textarea>
+        </div>
+
+        <div class="order-actions">
+          <button class="btn btn-primary btn-full" id="sendEmailBtn">
+            📧 Place Order via Email
+          </button>
+          <button class="btn btn-whatsapp btn-full" id="sendWhatsAppBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.845L.054 23.25l5.532-1.454A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.033-1.375l-.36-.214-3.737.98 1-3.633-.234-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+            Order on WhatsApp
+          </button>
+        </div>
+
+        <button class="btn btn-danger btn-full" id="clearCartBtn">🗑 Clear Cart</button>
+      </div>
+
+      <!-- Order Message -->
+      <div class="order-message" id="orderMessage"></div>
+    </div>
+  </div>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
