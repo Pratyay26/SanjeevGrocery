@@ -17,42 +17,14 @@
    ============================================= */
 const products = [
   /* STAPLES */
-  { id:1,  name:"Basmati Rice",      category:"staples",  emoji:"🍚", weight:"1 kg",    price:120, mrp:140, badge:"Popular"   },
-  { id:2,  name:"Whole Wheat Flour", category:"staples",  emoji:"🌾", weight:"5 kg",    price:210, mrp:240, badge:null        },
-  { id:3,  name:"Pure Sugar",        category:"staples",  emoji:"🧁", weight:"1 kg",    price:45,  mrp:52,  badge:null        },
-  { id:4,  name:"Rock Salt",         category:"staples",  emoji:"🧂", weight:"1 kg",    price:25,  mrp:30,  badge:null        },
-  { id:5,  name:"Mustard Oil",       category:"staples",  emoji:"🫒", weight:"1 L",     price:175, mrp:200, badge:"Organic"   },
-  { id:6,  name:"Premium Tea",       category:"staples",  emoji:"🍵", weight:"500 g",   price:180, mrp:210, badge:null        },
-  { id:7,  name:"Ground Coffee",     category:"staples",  emoji:"☕", weight:"200 g",   price:220, mrp:260, badge:null        },
-  /* DAIRY & EGGS */
-  { id:8,  name:"Full Cream Milk",   category:"dairy",    emoji:"🥛", weight:"1 L",     price:62,  mrp:68,  badge:"Fresh"     },
-  { id:9,  name:"Farm Eggs",         category:"dairy",    emoji:"🥚", weight:"12 pcs",  price:84,  mrp:96,  badge:"Farm Fresh" },
-  { id:10, name:"Whole Wheat Bread", category:"dairy",    emoji:"🍞", weight:"400 g",   price:40,  mrp:45,  badge:null        },
-  { id:11, name:"Fresh Butter",      category:"dairy",    emoji:"🧈", weight:"500 g",   price:240, mrp:270, badge:null        },
+  { id:1,  name:"Wheat Flour ( Atta )",      category:"staples",  emoji:"🌾", weight:"1 kg",    price:38, mrp:42, badge:"Popular"   },
+  { id:2,  name:"Sugar ( Chinni )", category:"staples",  emoji:"🧁", weight:"1 kg",    price:52, mrp:60, badge:null        },
+  { id:3,  name:"Tata salt",        category:"staples",  emoji:"🧂", weight:"1 kg",    price:30,  mrp:35,  badge:null        },
+  { id:4,  name:"Gram flour (besan)",         category:"staples",  emoji:"🌾", weight:"1 pkt 250 g",    price:40,  mrp:45,  badge:null        },
+  { id:5,  name:"Gram (chana)",       category:"staples",  emoji:"🌾", weight:"1 kg",     price:75, mrp:80, badge:"Organic"   },
   /* PULSES */
-  { id:12, name:"Yellow Toor Dal",   category:"pulses",   emoji:"🫘", weight:"1 kg",    price:130, mrp:150, badge:null        },
-  { id:13, name:"Green Moong Dal",   category:"pulses",   emoji:"🟢", weight:"1 kg",    price:115, mrp:135, badge:null        },
-  { id:14, name:"Kabuli Chana",      category:"pulses",   emoji:"⚪", weight:"1 kg",    price:145, mrp:170, badge:null        },
-  /* SPICES */
-  { id:15, name:"Turmeric Powder",   category:"spices",   emoji:"🟡", weight:"200 g",   price:55,  mrp:65,  badge:"Organic"   },
-  { id:16, name:"Red Chilli Powder", category:"spices",   emoji:"🌶️",weight:"200 g",   price:70,  mrp:80,  badge:null        },
-  { id:17, name:"Garam Masala",      category:"spices",   emoji:"🍛", weight:"100 g",   price:85,  mrp:100, badge:null        },
-  { id:18, name:"Cumin Seeds",       category:"spices",   emoji:"🌿", weight:"200 g",   price:60,  mrp:72,  badge:null        },
-  /* FRUITS & VEG */
-  { id:19, name:"Fresh Tomatoes",    category:"fruits",   emoji:"🍅", weight:"1 kg",    price:35,  mrp:42,  badge:"Fresh"     },
-  { id:20, name:"Green Spinach",     category:"fruits",   emoji:"🥬", weight:"500 g",   price:28,  mrp:35,  badge:"Fresh"     },
-  { id:21, name:"Banana Bunch",      category:"fruits",   emoji:"🍌", weight:"12 pcs",  price:55,  mrp:65,  badge:null        },
-  { id:22, name:"Fresh Apples",      category:"fruits",   emoji:"🍎", weight:"1 kg",    price:180, mrp:210, badge:null        },
-  { id:23, name:"Organic Broccoli",  category:"fruits",   emoji:"🥦", weight:"500 g",   price:70,  mrp:85,  badge:"Organic"   },
-  /* ORGANIC */
-  { id:24, name:"Pure Honey",        category:"organic",  emoji:"🍯", weight:"500 g",   price:290, mrp:350, badge:"Organic"   },
-  { id:25, name:"Cashew Nuts",       category:"organic",  emoji:"🥜", weight:"250 g",   price:320, mrp:380, badge:null        },
-  { id:26, name:"Almonds",           category:"organic",  emoji:"🌰", weight:"250 g",   price:280, mrp:330, badge:"Premium"   },
-  { id:27, name:"Raisins",           category:"organic",  emoji:"🍇", weight:"250 g",   price:160, mrp:195, badge:null        },
-  /* PERSONAL CARE */
-  { id:28, name:"Neem Soap",         category:"personal", emoji:"🧼", weight:"3 × 100g",price:90,  mrp:105, badge:null        },
-  { id:29, name:"Herbal Shampoo",    category:"personal", emoji:"🧴", weight:"200 ml",  price:145, mrp:175, badge:null        },
-  { id:30, name:"Detergent Powder",  category:"personal", emoji:"🫧", weight:"1 kg",    price:110, mrp:130, badge:null        },
+  { id:6, name:"Dal ( pulses )",   category:"pulses",   emoji:"🫘", weight:"1 kg",    price:80, mrp:85, badge:null        },
+  { id:7, name:"Kabuli matar",      category:"pulses",   emoji:"⚪", weight:"1 kg",    price:80, mrp:85, badge:null        },
 ];
 
 /* =============================================
