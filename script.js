@@ -403,7 +403,13 @@ function handleEmailOrder() {
     product_list:     list,
     grand_total:      total,
     order_summary:
-      `Customer: ${name}\nPhone: ${phone}\nAddress: ${address}\nNotes: ${notes}\nDate: ${dt}\n\nItems:\n${list}\n\nTotal: ${total}`,
+      `Customer: ${name} 
+       Phone: ${phone}
+       Address: ${address}
+       Notes: ${notes}
+       Date: ${dt}
+       Items:${list}
+       Total: ${total}`,
   };
 
   const btn = document.getElementById("sendEmailBtn");
@@ -447,23 +453,23 @@ function handleWhatsAppOrder() {
   const total   = "Rs." + cartTotal().toFixed(2);
 
   const msg = [
-    "🌿 *New Order - Sanjeev Grocery Shop*",
+    "New Order - Sanjeev Grocery Shop",
     "─────────────────────────",
-    `👤 *Customer:* ${name}`,
-    `📞 *Phone:* ${phone}`,
-    `🏠 *Address:* ${address}`,
-    `📝 *Notes:* ${notes}`,
-    `🕐 *Date & Time:* ${getNow()}`,
+    `Customer: ${name}`,
+    `Phone: ${phone}`,
+    `Address: ${address}`,
+    `Notes: ${notes}`,
+    `Date & Time: ${getNow()}`,
     "─────────────────────────",
-    "🛒 *Order Items:*",
+    "Order Items:",
     ...cart.map(e => {
       const p = getProduct(e.id);
       return p ? `  ${p.emoji} ${p.name} (${p.weight}) x${e.qty} = Rs.${(p.price*e.qty).toFixed(2)}` : "";
     }),
     "─────────────────────────",
-    `💰 *Grand Total: ${total}*`,
+    `Grand Total: ${total}`,
     "─────────────────────────",
-    "Thank you for your order! 🙏",
+    "Thank you for your order!",
   ].join("\n");
 
   window.open("https://wa.me/917043873494?text=" + encodeURIComponent(msg), "_blank", "noopener,noreferrer");
